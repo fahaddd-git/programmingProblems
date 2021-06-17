@@ -1,6 +1,7 @@
 # ID: 206
 # URL: https://leetcode.com/problems/reverse-linked-list/
 # Difficulty: Easy
+# Description: Given the head of a singly linked list, reverse the list, and return the reversed list.
 
 
 # Definition for singly-linked list.
@@ -9,6 +10,8 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
+# Recursive solution in place
 
 class RecursiveSolution:
     """
@@ -49,3 +52,4 @@ class RecursiveSolution:
         curr.next=prev
         return self.reverseHelper(next, curr)
         
+# TODO: Add iterative solution
